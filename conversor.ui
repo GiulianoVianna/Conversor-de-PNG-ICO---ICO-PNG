@@ -6,17 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>723</width>
-    <height>104</height>
+    <width>919</width>
+    <height>151</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Conversor de PNG / ICO - ICO / PNG</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.ico</normaloff>icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(197, 197, 197);</string>
+  </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>7</x>
+     <x>27</x>
      <y>33</y>
      <width>72</width>
      <height>24</height>
@@ -37,10 +44,10 @@
   <widget class="QPushButton" name="bt_ad_origem">
    <property name="geometry">
     <rect>
-     <x>480</x>
-     <y>30</y>
+     <x>780</x>
+     <y>24</y>
      <width>111</width>
-     <height>30</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -60,9 +67,9 @@
   <widget class="QLineEdit" name="txt_origem">
    <property name="geometry">
     <rect>
-     <x>80</x>
+     <x>110</x>
      <y>30</y>
-     <width>391</width>
+     <width>651</width>
      <height>30</height>
     </rect>
    </property>
@@ -82,10 +89,10 @@ background-color: rgb(255, 255, 255);</string>
   <widget class="QPushButton" name="bt_converter">
    <property name="geometry">
     <rect>
-     <x>600</x>
-     <y>30</y>
+     <x>780</x>
+     <y>77</y>
      <width>111</width>
-     <height>30</height>
+     <height>40</height>
     </rect>
    </property>
    <property name="font">
@@ -105,9 +112,9 @@ background-color: rgb(255, 255, 255);</string>
   <widget class="QLabel" name="lb_status">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>80</y>
-     <width>701</width>
+     <x>0</x>
+     <y>130</y>
+     <width>921</width>
      <height>20</height>
     </rect>
    </property>

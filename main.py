@@ -1,5 +1,7 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog
+from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QIcon
 from PIL import Image
 import os
 
@@ -13,19 +15,24 @@ class ConversorUI(QMainWindow):
         self.bt_ad_origem.clicked.connect(self.selecionar_arquivo)
         self.bt_converter.clicked.connect(self.converter_arquivo)
 
+        # Desativar os botões de maximizar e minimizar
+        self.setWindowFlags(Qt.Window | Qt.WindowCloseButtonHint)
+
         self.show()
 
+    # Função para selecionar um arquivo
     def selecionar_arquivo(self):
-        arquivo, _ = QFileDialog.getOpenFileName(self, "Selecionar arquivo", "", "Images (*.png *.ico)")
+        arquivo, _ = QFileDialog.getOpenFileName(self, " Selecionar arquivo", "", "Images (*.png *.ico)")
         if arquivo:
             self.txt_origem.setText(arquivo)
             extensao = os.path.splitext(arquivo)[1][1:].upper()
-            self.lb_status.setText(f'Arquivo {extensao} selecionado.')
+            self.lb_status.setText(f'  Arquivo {extensao} selecionado.')
 
+    # Função para converter arquivo PNG em ICO ou ICO em PNG
     def converter_arquivo(self):
         arquivo_origem = self.txt_origem.text()
         if not arquivo_origem:
-            self.lb_status.setText("Favor selecionar um arquivo ICO ou PNG.")
+            self.lb_status.setText("  Favor selecionar um arquivo ICO ou PNG.")
             return
 
         if arquivo_origem.endswith('.png'):
@@ -33,13 +40,13 @@ class ConversorUI(QMainWindow):
         elif arquivo_origem.endswith('.ico'):
             arquivo_destino = arquivo_origem[:-4] + '.png'
         else:
-            self.lb_status.setText("Formato não suportado.")
+            self.lb_status.setText("  Formato não suportado.")
             return
 
         imagem = Image.open(arquivo_origem)
         imagem.save(arquivo_destino)
 
-        self.lb_status.setText(f"Arquivo convertido e salvo como {arquivo_destino}")
+        self.lb_status.setText(f"  Salvo como {arquivo_destino}")
 
 # Função para iniciar a aplicação
 def iniciar_aplicacao():
