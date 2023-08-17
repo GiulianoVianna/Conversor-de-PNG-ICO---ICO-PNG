@@ -23,10 +23,7 @@ A janela da aplicação não pode ser maximizada ou minimizada, apenas fechada.
 A aplicação requer a biblioteca PyQt5 para a interface gráfica e a biblioteca PIL (Pillow) para o manuseio de imagens.
 
 ### Imagem da Aplicação
-![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/d07b2edf-6e21-4293-9a69-ac3c5048c34f)
 
-![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/81dd8cbf-4830-4d62-bd7a-254876d7abef)
-
-![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/141723f5-ee14-4493-806b-e9c66cffa0af)
+![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/04257367-3146-474a-8382-4232a91fe332)
 
 
