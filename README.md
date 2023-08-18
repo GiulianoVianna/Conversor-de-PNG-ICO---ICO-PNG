@@ -2,7 +2,7 @@
 ### Conversor de arquivos PNG em ICO e ICO em PNG.
 
 ### Aplicação Desenvolvida em Python.
-
+#### Link do projeto: https://github.com/users/GiulianoVianna/projects/6
 
 1. Finalidade:
 A aplicação converte imagens entre os formatos PNG e ICO. É útil quando você precisa de um formato específico para uma finalidade particular, como ícones de aplicativos.
