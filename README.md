@@ -24,6 +24,14 @@ A aplicação requer a biblioteca PyQt5 para a interface gráfica e a biblioteca
 
 ### Imagem da Aplicação
 
+Windows
+
 ![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/04257367-3146-474a-8382-4232a91fe332)
+
+Linux
+
+![image](https://github.com/GiulianoVianna/Conversor-de-PNG-ICO---ICO-PNG/assets/101942554/68bd420f-64ba-4706-ac86-826df513ab4b)
+
+
 
 
