@@ -17,21 +17,21 @@ class ConversorUI(QMainWindow):
 
     # Função para selecionar um arquivo de imagem
     def selecionar_arquivo(self):
-        arquivo, _ = QFileDialog.getOpenFileName(self, "Selecionar arquivo", "", "Images (*.png *.ico)")
+        arquivo, _ = QFileDialog.getOpenFileName(self, " Selecionar arquivo", "", "Images (*.png *.ico)")
         if arquivo:
             self.txt_origem.setText(arquivo)
             extensao = os.path.splitext(arquivo)[1][1:].upper()
-            self.lb_status.setText(f'Arquivo {extensao} selecionado.')
+            self.lb_status.setText(f' Arquivo {extensao} selecionado.')
 
     # Função para converter o arquivo selecionado
     def converter_arquivo(self):
         arquivo_origem = self.txt_origem.text()
         if not arquivo_origem:
-            self.lb_status.setText("Favor selecionar um arquivo ICO ou PNG.")
+            self.lb_status.setText(" Favor selecionar um arquivo ICO ou PNG.")
             return
 
         # Mostrar janela de seleção de tamanho
-        tamanho, ok = QInputDialog.getItem(self, "Selecionar Tamanho", "Escolha o tamanho do ícone:", ["16x16", "32x32", "64x64", "128x128"], 0, False)
+        tamanho, ok = QInputDialog.getItem(self, " Selecionar Tamanho", "Escolha o tamanho do ícone:", ["16x16", "32x32", "64x64", "128x128"], 0, False)
         if not ok:
             return
 
@@ -42,7 +42,7 @@ class ConversorUI(QMainWindow):
         elif arquivo_origem.endswith('.ico'):
             arquivo_destino = arquivo_origem[:-4] + '.png'
         else:
-            self.lb_status.setText("Formato não suportado.")
+            self.lb_status.setText(" Formato não suportado.")
             return
 
         imagem = Image.open(arquivo_origem)
@@ -50,7 +50,7 @@ class ConversorUI(QMainWindow):
             imagem = imagem.resize(tamanho)
         imagem.save(arquivo_destino)
 
-        self.lb_status.setText(f"Arquivo convertido e salvo como {arquivo_destino}")
+        self.lb_status.setText(f" Arquivo convertido e salvo como {arquivo_destino}")
 
 # Função para iniciar a aplicação
 def iniciar_aplicacao():
