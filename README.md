@@ -1,5 +1,5 @@
 # Conversor de PNG / ICO - ICO / PNG.
-###Conversor de arquivos PNG em ICO e ICO em PNG.
+### Conversor de arquivos PNG em ICO e ICO em PNG.
 
 ### Aplicação Desenvolvida em Python.
 
